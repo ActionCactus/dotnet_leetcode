@@ -1,8 +1,8 @@
 using System;
 using Xunit;
-using lib;
+using leetcode;
 
-namespace lib.test
+namespace leetcode.test
 {
     public class TwoSumTest
     {
@@ -17,7 +17,7 @@ namespace lib.test
         [Fact]
         public void TestExecutionWithNoResults()
         {
-            Assert.Equal(null, TwoSum.calc(new int[] { 1, 2, 3 }, 172));
+            Assert.Null(TwoSum.calc(new int[] { 1, 2, 3 }, 172));
         }
     }
 }
